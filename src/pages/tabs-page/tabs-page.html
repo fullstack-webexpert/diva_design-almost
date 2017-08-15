@@ -1,0 +1,19 @@
+<ion-tabs [selectedIndex]="mySelectedIndex" name="conference">
+  <ion-tab [root]="homeRoot" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab (ionSelect)="callMe()" tabTitle="Call Diva" style="color: #ff0000" tabIcon="call"></ion-tab>
+<!--   <ion-tab [root]="socialRoot" tabTitle="Facebook Feed" tabIcon="logo-facebook"></ion-tab> -->
+	
+	    <ion-fab right bottom>
+      <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="top">
+        <button ion-fab (click)="linkTo('http://dilanidiva.com/videos/')"><ion-icon ios="logo-youtube" md="logo-youtube"></ion-icon></button>
+        <button ion-fab (click)="linkTo('https://www.facebook.com/dilanidivaspiritualguru')"><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab (click)="linkTo('https://twitter.com/dilanidiva?lang=en')"><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidivapoetry.com/')"><ion-icon ios="ios-link" md="md-link"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com')"><ion-icon name="logo-googleplus"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com/about-dilani-2/her-sessions/')"><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://dilanidiva.com')"><ion-icon ios="ios-information" md="md-information"></ion-icon></button>
+        <button ion-fab (click)="linkTo('http://h.theapp.mobi/app_privacy_terms.html')"><ion-icon ios="ios-lock" md="md-lock"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+</ion-tabs>

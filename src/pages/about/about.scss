@@ -1,0 +1,54 @@
+.about-header {
+  width: 100%;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  display: block;
+  position: fixed;
+}
+.about-header img {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+    display: block;
+    position: fixed;
+}
+.about-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.about-info ion-icon {
+  color: color($colors, primary);
+  width: 20px;
+}
+
+.md,
+.wp {
+  .about-info [text-right] {
+    margin-right: 0;
+  }
+}
+
+.ios .about-info {
+  text-align: center;
+}
+
+.ios .about-info ion-icon {
+  width: auto;
+  margin-right: 10px;
+}
+.fab-ios{
+    color: #fff;
+    background-color: #267337;
+}
+.fab-ios-in-list{
+    background-color: #488aff;
+}
+
